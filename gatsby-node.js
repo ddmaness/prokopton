@@ -1,7 +1,7 @@
 exports.createPages = async({actions, graphql, reporter}) => {
     const {createPage} = actions
     
-    const blogPostTemplate = require.resolve(`${__dirname}/src/templates/blogtemplate.js`)
+    const blogPostTemplate = require.resolve(`${__dirname}/src/templates/BlogTemplate.js`)
 
     const result = await graphql(`
         {
