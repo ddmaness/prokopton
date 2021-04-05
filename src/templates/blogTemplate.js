@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 export default function BlogTemplate({data}) {
     const {markdownRemark} = data
     const {frontmatter, html} = markdownRemark
-    console.log(markdownRemark)
     return (
         <div>
             <h1>{frontmatter.title}</h1>
